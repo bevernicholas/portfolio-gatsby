@@ -19,11 +19,11 @@ body {
 }
 
 .main {
-  background-color: $color-primary-dark;
+  // background-color: $color-primary-dark;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content 10rem;
   grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] 1fr [main-end];
 }
