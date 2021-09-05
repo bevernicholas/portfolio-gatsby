@@ -1,10 +1,12 @@
 import React from 'react';
+import Card from './Card';
 
 import './Services.scss';
 
 const Services = () => (
   <div className="services">
-    Services
+    <Card title="Languages"/>
+    <Card title="Technologies"/>
   </div>
 );
 

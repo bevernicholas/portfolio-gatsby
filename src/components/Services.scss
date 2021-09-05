@@ -1,6 +1,10 @@
 .services {
   grid-column: center-start / center-end;
-  grid-row: 2 / 3;
-  height: 60rem;
+  // grid-row: 2 / 3;
   background-color: #eee;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-gap: 6rem;
+  align-items: center;
 }
