@@ -1,6 +1,6 @@
 .card {
   background-color: orange;
-  height: 52rem;
+  height: 60rem;
   width: 50rem;
   margin: 5rem auto;
   border-radius: .3rem;
@@ -17,8 +17,28 @@
   &__underline {
     width: 80%;
     height: .12rem;
-    background-color: $color-grey-dark-1;
+    background-color: $color-secondary;
     margin: 0 auto;
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-grey-dark-1;
+      }
+    }
   }
 
   &:hover {
