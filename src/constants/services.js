@@ -8,7 +8,12 @@ export default [
   },
   {
     id: 2,
-    title: 'Technologies',
-    text: [`React.js`, `Node.js`, `Redux`, `Express.js`, `ASP.NET Core`, `CSS`, `SCSS`, `Flask`, `Elasticsearch`]
+    title: 'Frameworks',
+    text: [`React.js`, `Node.js`, `Redux`, `Express.js`, `ASP.NET Core`, `CSS`, `SCSS`]
+  },
+  {
+    id: 3,
+    title: 'Tech Stack',
+    text: [`Elasticsearch`, `Apache Spark`, `Apache Airflow`, `GraphQL`, `AWS - EMR`, `AWS - Lambda`]
   }
 ]

@@ -12,8 +12,9 @@ html {
 }
 
 body {
-  font-family: $font-primary;
-  color: $color-grey-dark-2;
+  // font-family: $font-primary;
+  font-family: 'Roboto';
+  color: rgba($color-black, .7);
   font-weight: 300;
   line-height: 1.6;
 }
@@ -25,5 +26,6 @@ body {
 .container {
   display: grid;
   grid-template-rows: min-content 10rem;
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] 1fr [main-end];
+  grid-template-columns: 1fr;
+  // margin: 2rem;
 }

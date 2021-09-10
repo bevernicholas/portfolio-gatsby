@@ -7,6 +7,9 @@ import './Services.scss';
 
 const Services = () => (
   <div className="services">
+    <div className="u-center-text services__heading">
+      <h2 className="heading-secondary">Expertise</h2>
+    </div>
     {services.map(service => {
       const {id, title, text} = service;
       return <Card id={id} title={title} text={text} />

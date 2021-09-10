@@ -1,16 +1,17 @@
 .card {
-  background-color: orange;
-  height: 60rem;
-  width: 50rem;
-  margin: 5rem auto;
-  border-radius: .3rem;
+  background-color: rgba($color-white, .8);
+  height: 45rem;
+  width: 30rem;
+  margin: 0 auto 5rem;
+  border-radius: .6rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
   transition: transform .3s;
+  font-size: 1.2rem;
 
   &__heading {
     text-align: center;
     margin: 4rem 0 2rem;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 300;
   }
 
@@ -32,17 +33,19 @@
 
     li {
       text-align: center;
+      margin: 0 auto;
       font-size: 1.5rem;
       padding: 1rem;
+      width: 75%;
 
       &:not(:last-child) {
-        border-bottom: 1px solid $color-grey-dark-1;
+        border-bottom: 1px solid rgba($color-secondary, .6);
+        // border-bottom: 1px solid $color-grey-slate-2;
       }
     }
   }
 
   &:hover {
-    // transform: translateY(-1.5rem) scale(1.03);
     transform: translateY(-1.5rem) scale(1.03);
   }
 }

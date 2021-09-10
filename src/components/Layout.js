@@ -6,7 +6,6 @@ import './Layout.scss';
 
 const Layout = ({ children }) => (
   <div className="container">
-    <Sidebar />
     <main className="main">
       {children}
     </main>

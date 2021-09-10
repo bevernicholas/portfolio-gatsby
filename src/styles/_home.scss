@@ -1,7 +1,45 @@
 .home {
-  background-color: orange;
+  background-color: $color-grey-slate-1;
 
   display: grid;
-  grid-template-rows: 70vh min-content min-content;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh min-content min-content;
+  grid-template-columns: [full-start] 2rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 2rem [full-end];
+}
+
+.heading-primary{
+  color: $color-white;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+
+  &--leter {
+    color: $color-secondary;
+  }
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+  }
+}
+
+.heading-secondary {
+  color: $color-secondary;
+  text-transform: uppercase;
+
+  font-size: 5rem;
+  letter-spacing: 2rem;
+}
+
+.u-center-text {
+  text-align: center !important;
 }

@@ -1,10 +1,17 @@
 .services {
   grid-column: center-start / center-end;
-  // grid-row: 2 / 3;
-  background-color: #eee;
+  background-color: $color-white-1;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: 1fr min-content;
   grid-gap: 6rem;
   align-items: center;
+  justify-items: center;
+  justify-content: end;
+
+  &__heading {
+    margin-top: 5rem;
+    grid-column: 1 / -1;
+  }
 }

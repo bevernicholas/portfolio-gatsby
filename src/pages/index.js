@@ -12,7 +12,7 @@ export default () => (
       <div className="home">
         <Hero />
         <Services />
-        <Jobs />
+        {/* <Jobs /> */}
       </div>
     </Layout>
   </>
