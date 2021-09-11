@@ -1,11 +1,11 @@
 .card {
-  background-color: rgba($color-white, .8);
+  background-color: rgba($color-primary-light, .7);
   height: 45rem;
   width: 30rem;
   margin: 0 auto 5rem;
   border-radius: .6rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-  transition: transform .3s;
+  transition: transform .6s;
   font-size: 1.2rem;
 
   &__heading {
@@ -13,6 +13,7 @@
     margin: 4rem 0 2rem;
     font-size: 2.2rem;
     font-weight: 300;
+    text-transform: uppercase;
   }
 
   &__underline {
@@ -40,7 +41,6 @@
 
       &:not(:last-child) {
         border-bottom: 1px solid rgba($color-secondary, .6);
-        // border-bottom: 1px solid $color-grey-slate-2;
       }
     }
   }
