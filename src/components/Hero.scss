@@ -2,18 +2,22 @@
   grid-column: full-start / full-end;
 
   display: grid;
+  grid-template-rows: 1fr 5rem;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   background-image: linear-gradient(rgba($color-primary-dark, .93), rgba($color-primary-dark, .93)), url(../images/jackson-so-_t-l5FFH8VA-unsplash.jpg);
   background-size: cover;
   background-position: center;
   color: $color-secondary;
+
+  &__text-box {
+    align-self: center;
+  }
 }
 
 .social {
   align-self: start;
-  transform: translateY(-3rem);
+  transform: translateY(-15rem);
 
   &__links {
     display: flex;
