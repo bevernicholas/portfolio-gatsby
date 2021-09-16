@@ -10,3 +10,29 @@
   background-position: center;
   color: $color-secondary;
 }
+
+.social {
+  align-self: start;
+  transform: translateY(-3rem);
+
+  &__links {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__link {
+    margin-right: 1.5rem;
+    color: $color-secondary;
+    transition: transform .4s;
+
+    &:hover {
+      transform: translateY(-.4rem) scale(1.03);
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    color: $color-secondary;
+  }
+}

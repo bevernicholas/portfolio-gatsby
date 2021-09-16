@@ -1,4 +1,5 @@
 import React from 'react';
+import socialLinks from '../constants/socialLinks';
 
 import './Hero.scss';
 
@@ -16,6 +17,13 @@ const Hero = () => (
           Software Development Engineer
         </span>
       </h1>
+    </div>
+    <div className="social">
+      <ul className="social__links">{socialLinks.map(socialLink => (
+        <li id={socialLink.id} className="social__link">
+          <a href={socialLink.url}>{socialLink.icon}</a>
+        </li>
+      ))}</ul>
     </div>
   </div>
 );
