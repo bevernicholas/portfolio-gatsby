@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import Jobs from "../components/Experience";
+import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 
 import '../styles/_home.scss';
@@ -13,7 +13,7 @@ export default () => (
       <div className="home">
         <Hero />
         <Services />
-        <Jobs />
+        <Experience />
         <Projects />
       </div>
     </Layout>
