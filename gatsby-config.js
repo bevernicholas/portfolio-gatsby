@@ -4,6 +4,8 @@ module.exports = {
     title: "nicholas-portfolio",
   },
   plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -19,6 +21,13 @@ module.exports = {
           'Roboto'
         ],
         display: 'swap'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
       }
     }
   ],

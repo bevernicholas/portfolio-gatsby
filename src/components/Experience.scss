@@ -1,7 +1,7 @@
 .experience {
   grid-column: full-start / full-end;
-  background-color: $color-primary-dark;
   color: $color-primary-dark;
+  background-color: rgba($color-primary-dark, .97);
   font-size: 2rem;
 
   display: grid;
@@ -9,23 +9,16 @@
   grid-template-rows: 1fr repeat(3, 30vw) 3rem;
   grid-gap: 6rem;
 
-  // align-items: center;
-  // justify-items: center;
-  // justify-content: end;
-
   &__item {
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
     grid-template-rows: 15rem repeat(4, min-content) .6rem;
     grid-gap: .3rem;
 
-    // background: $color-white;
-    background-image: linear-gradient(rgba($color-white, .85), rgba($color-white, .85)), url(../images/walkator-klMii3cR9iI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    background: $color-white;
     grid-column: 2 / 3;
-    border-radius: .6rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .8);
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .9);
     padding-left: .5rem;
   }
 
@@ -42,7 +35,8 @@
 
     .company {
       background-color: $color-primary-light;
-      border-radius: .5rem;
+      color: $color-white;
+      border-radius: .3rem;
       display: inline-block;
       padding: .1rem .6rem;
     }
@@ -51,14 +45,15 @@
   &__description {
     display: flex;
     grid-column: 2 / 3;
-    align-self: center;
-    align-items: center;
+    // align-self: center;
+    align-items: flex-start;
+    // justify-items: flex-start;
   }
 
   &__icon {
     color: $color-secondary;
     margin-right: .5rem;
-    // transform: translateY(.6rem);
+    transform: translateY(.6rem);
   }
 
   &__heading {
