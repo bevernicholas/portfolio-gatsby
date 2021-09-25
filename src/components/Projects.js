@@ -1,26 +1,36 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import Project from './Project';
+import { projects } from '../constants/projects';
 
 import './Projects.scss';
 
 const query = graphql`
   {
-    allFile(filter: {relativePath: {eq: "altumcode-project1.jpg"}}) {
-      nodes {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+	project1: allFile(filter: {relativePath: {eq: "altumcode-project1.jpg"}}) {
+		nodes {
+			childImageSharp {
+				fluid {
+					...GatsbyImageSharpFluid_withWebp
         }
       }
     }
   }
+  project2: allFile(filter: {relativePath: {eq: "james-harrison-project2.jpg"}}) {
+		nodes {
+			childImageSharp {
+				fluid {
+					...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+}
 `;
 
 const Projects = () => {
-  const data = useStaticQuery(query);
-  console.log(data);
+  const imageData = useStaticQuery(query);
+  console.log(imageData);
 
   return (
     <div className="projects">
@@ -28,12 +38,10 @@ const Projects = () => {
         <h2 className="heading-secondary">Featured Projects</h2>
         <div className="heading-secondary__underline"></div>
       </div>
-      <div className="projects__item">
-        <div className="projects__item--img">
-          <Image fluid={data.allFile.nodes[0].childImageSharp.fluid} alt="test" className="projects__img"/>
-        </div>
-        <div className="projects__item--description"></div>
-      </div>
+      {projects.map((project, indx) => {
+        const image = imageData[project.imageName];
+        return <Project project={project} projectImage={image}/>
+      })}
     </div>
   )
 };

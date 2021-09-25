@@ -1,5 +1,8 @@
 .card {
-  background-color: rgba($color-primary-dark, .93);
+  background-color: rgba($color-white, .97);
+  // background-color: rgba($color-primary-light, .97);
+  // background-color: rgba($color-primary-dark, .93);
+  color: $color-primary-dark;
   height: 45rem;
   width: 30rem;
   margin: 0 auto 5rem;
@@ -18,7 +21,7 @@
 
   &__underline {
     width: 80%;
-    height: .12rem;
+    height: .18rem;
     background-color: $color-secondary;
     margin: 0 auto;
   }
@@ -40,7 +43,7 @@
       width: 75%;
 
       &:not(:last-child) {
-        border-bottom: 1px solid rgba($color-secondary, .6);
+        border-bottom: 1px solid $color-secondary;
       }
     }
   }

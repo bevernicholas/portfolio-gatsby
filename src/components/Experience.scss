@@ -1,7 +1,8 @@
 .experience {
   grid-column: full-start / full-end;
   color: $color-primary-dark;
-  background-color: rgba($color-primary-dark, .97);
+  // background-color: rgba($color-primary-dark, .97);
+  background-color: rgba($color-primary-light, .97);
   font-size: 2rem;
 
   display: grid;
