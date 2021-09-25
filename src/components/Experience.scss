@@ -1,7 +1,6 @@
 .experience {
   grid-column: full-start / full-end;
   color: $color-primary-dark;
-  // background-color: rgba($color-primary-dark, .97);
   background-color: rgba($color-primary-light, .97);
   font-size: 2rem;
 
@@ -40,15 +39,15 @@
       border-radius: .3rem;
       display: inline-block;
       padding: .1rem .6rem;
+      margin-bottom: .5rem;
     }
   }
 
   &__description {
     display: flex;
     grid-column: 2 / 3;
-    // align-self: center;
     align-items: flex-start;
-    // justify-items: flex-start;
+    margin-top: 1rem;
   }
 
   &__icon {

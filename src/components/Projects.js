@@ -40,7 +40,7 @@ const Projects = () => {
       </div>
       {projects.map((project, indx) => {
         const image = imageData[project.imageName];
-        return <Project project={project} projectImage={image}/>
+        return <Project key={indx} project={project} projectImage={image}/>
       })}
     </div>
   )
