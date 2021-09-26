@@ -1,7 +1,48 @@
 .footer {
   background-color: rgba($color-primary-dark, .97);
-  // background-color: $color-primary-dark;
-  // grid-column: full-start / full-end;
-  // grid-row: 4 / 5;
-  // grid-row: 3 / 4;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__social-links {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+
+    &--list {
+      display: flex;
+      list-style-type: none;
+
+      & > *{
+        margin-right: 2rem;
+      }
+    }
+  }
+
+
+  &__nav {
+    &--list {
+      display: flex;
+      justify-content: end;
+      list-style-type: none;
+    }
+
+    &--item {
+      margin-right: 2rem;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all .4s;
+
+      &:hover {
+        transform: translateY(-.4rem) scale(1.03);
+        color: $color-secondary;
+        border-bottom: 1px solid $color-secondary;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    grid-column: 2 / 3;
+  }
 }

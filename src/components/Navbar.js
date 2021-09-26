@@ -5,24 +5,6 @@ import './Navbar.scss';
 
 const Navbar = () => (
   <div className="navbar">
-    {/* <ul className="navbar__list">
-      <li className="navbar__item">
-        <a>Home</a>
-        <div className="navbar__underline"></div>
-      </li>
-      <li className="navbar__item">
-        <a>About</a>
-        <div className="navbar__underline"></div>
-      </li>
-      <li className="navbar__item">
-        <addEventListener>Projects</addEventListener>
-        <div className="navbar__underline"></div>
-      </li>
-      <li className="navbar__item">
-        <a>Contact</a>
-        <div className="navbar__underline"></div>
-      </li>
-    </ul> */}
     <ul className="navbar__list">
       <li className="navbar__item">
         <Link>Home</Link>
