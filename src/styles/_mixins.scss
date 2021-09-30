@@ -1,0 +1,30 @@
+//MEDIA QUERIES
+
+/*
+0 - 600: phone
+600 - 900: tablet portait
+900 - 1200: tablet landscape
+1200-1300: small desktop
+*/
+
+@mixin respond-small-desk {
+  @media (max-width: 1300px) { @content };
+}
+
+/*
+phone
+tab-port
+tab-land
+small-desk
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) { @content };
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) { @content };
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) { @content };
+  }
+}
