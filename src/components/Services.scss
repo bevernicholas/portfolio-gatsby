@@ -3,7 +3,7 @@
   background-color: $color-white;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-template-rows: 1fr min-content;
   grid-gap: 6rem;
   align-items: center;

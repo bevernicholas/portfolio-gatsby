@@ -19,10 +19,16 @@ small-desk
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 600px) { @content };
+    @media (max-width: 700px) { @content };
+  }
+  @if $breakpoint == tab-port-med {
+    @media (max-width: 775px) { @content };
   }
   @if $breakpoint == tab-port {
     @media (max-width: 900px) { @content };
+  }
+  @if $breakpoint == tab-land-med {
+    @media (max-width: 1050px) { @content };
   }
   @if $breakpoint == tab-land {
     @media (max-width: 1200px) { @content };
