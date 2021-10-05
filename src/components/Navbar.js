@@ -7,16 +7,16 @@ const Navbar = () => (
   <div className="navbar">
     <ul className="navbar__list">
       <li className="navbar__item">
-        <Link>Home</Link>
+        <Link className="navbar__link" to="/">Home</Link>
       </li>
       <li className="navbar__item">
-        <Link>About</Link>
+        <Link className="navbar__link" to="/about">About</Link>
       </li>
       <li className="navbar__item">
-        <Link>Projects</Link>
+        <Link className="navbar__link">Projects</Link>
       </li>
       <li className="navbar__item">
-        <Link>Contact</Link>
+        <Link className="navbar__link">Contact</Link>
       </li>
     </ul>
   </div>

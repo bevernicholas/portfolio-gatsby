@@ -16,6 +16,18 @@
     padding-right: 10rem;
   }
 
+  &__link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
   &__item {
     margin: 2.5rem;
     font-size: 22.5px;
