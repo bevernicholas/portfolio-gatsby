@@ -9,6 +9,10 @@
   grid-template-rows: 1fr repeat(3, 30vw) 3rem;
   grid-gap: 6rem;
 
+  @include respond(tab-port-med) {
+    grid-template-rows: 1fr repeat(3, 40vw) 3rem;
+  }
+
   &__item {
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
@@ -22,11 +26,15 @@
     padding-left: .5rem;
 
     @include respond(tab-land-med) {
-      font-size: 83%;
+      font-size: 1.45rem;
     }
 
     @include respond(tab-port) {
-      font-size: 60%;
+      font-size: 1.2rem;
+    }
+
+    @include respond(tab-port-med) {
+      font-size: 1.1rem;
     }
   }
 
@@ -48,6 +56,10 @@
       @include respond(tab-port) {
         font-size: 1.5rem;
         font-weight: 40%;
+      }
+
+      @include respond(tab-port-med) {
+        font-size: 1.4rem;
       }
     }
 

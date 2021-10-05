@@ -1,10 +1,9 @@
 .home {
   background-color: $color-grey-blue-light;
-  // grid-row: 2 / 3;
 
   display: grid;
   grid-template-rows: 100vh repeat(4, min-content);
-  grid-template-columns: [full-start] 2rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 2rem [full-end];
+  grid-template-columns: [full-start] 2rem [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 2rem [full-end];
 }
 
 .heading-primary{

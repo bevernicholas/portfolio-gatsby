@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-template-rows: 1fr min-content;
-  grid-gap: 6rem;
+  // grid-gap: 6rem;
   align-items: center;
   justify-items: center;
   justify-content: end;
@@ -13,5 +13,6 @@
   &__heading {
     margin-top: 5rem;
     grid-column: 1 / -1;
+    margin-bottom: 5rem;
   }
 }
