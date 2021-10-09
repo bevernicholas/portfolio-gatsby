@@ -4,16 +4,16 @@ export default [
   {
     id: 1,
     title: 'Languages',
-    text: [`TypeScript`, `Javascript`, `Python`, `C#`, `Java`, `SQL`, `HTML5`]
+    text: [`TypeScript`, `Javascript`, `Python`, `C#`, `Java`, `SQL`]
   },
   {
     id: 2,
     title: 'Frameworks',
-    text: [`React.js`, `Node.js`, `Redux`, `Express.js`, `ASP.NET Core`, `CSS`, `SCSS`]
+    text: [`React.js`, `Node.js`, `Redux`, `Express.js`, `ASP.NET Core`]
   },
   {
     id: 3,
     title: 'Tech Stack',
-    text: [`Elasticsearch`, `Apache Spark`, `Apache Airflow`, `GraphQL`, `AWS - EMR`, `AWS - Lambda`]
+    text: [`Elasticsearch`, `Apache Spark`, `GraphQL`, `AWS `, `CSS`, `HTML5`]
   }
 ]

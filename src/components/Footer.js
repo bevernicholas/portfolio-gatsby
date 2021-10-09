@@ -23,11 +23,14 @@ const Footer = () => (
         <li className="footer__nav--item">
           <Link>About</Link>
         </li>
-        <li className="footer__nav--item">
+        {/* <li className="footer__nav--item">
           <Link>Projects</Link>
         </li>
         <li className="footer__nav--item">
           <Link>Contact</Link>
+        </li> */}
+        <li className="footer__nav--item">
+          <p>bevernicholas@gmail.com</p>
         </li>
       </ul>
     </div>

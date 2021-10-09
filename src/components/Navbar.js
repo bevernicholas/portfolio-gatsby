@@ -12,12 +12,12 @@ const Navbar = () => (
       <li className="navbar__item">
         <Link className="navbar__link" to="/about">About</Link>
       </li>
-      <li className="navbar__item">
+      {/* <li className="navbar__item">
         <Link className="navbar__link">Projects</Link>
-      </li>
-      <li className="navbar__item">
+      </li> */}
+      {/* <li className="navbar__item">
         <Link className="navbar__link">Contact</Link>
-      </li>
+      </li> */}
     </ul>
   </div>
 );

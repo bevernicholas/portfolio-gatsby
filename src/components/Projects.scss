@@ -129,6 +129,11 @@
         bottom: 1rem;
       }
 
+      @include respond(phone) {
+        top: 1.4rem;
+        right: 1rem;
+      }
+
       li {
         margin-right: 1.75rem;
       }

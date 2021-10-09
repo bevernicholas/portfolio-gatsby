@@ -12,12 +12,18 @@
 }
 
 /*
+phone-small
 phone
+tab-port-med
 tab-port
+tab-land-med
 tab-land
 small-desk
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media (max-width: 640px) { @content };
+  }
   @if $breakpoint == phone {
     @media (max-width: 700px) { @content };
   }
