@@ -29,6 +29,18 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`
       }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'xxx',
+        short_name: 'xxx',
+        start_url: '/',
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        display: "standalone",
+        icon: "src/images/icons8-console-64.png"
+      }
     }
   ],
 };

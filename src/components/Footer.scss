@@ -44,5 +44,16 @@
   &__desc {
     font-size: 2rem;
     grid-column: 2 / 3;
+
+    p {
+
+      a {
+        &:visited,
+        &:link {
+        text-decoration: none;
+        color: $color-secondary;
+      }
+      }
+    }
   }
 }

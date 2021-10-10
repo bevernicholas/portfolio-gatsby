@@ -35,7 +35,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className="footer__desc">
-      <p>Built and designed by Nicholas Bever</p>
+      <p>Built and designed by Nicholas Bever. <a target="_blank" href="https://icons8.com/icon/52515/console">Console</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </div>
   </div>
 );
