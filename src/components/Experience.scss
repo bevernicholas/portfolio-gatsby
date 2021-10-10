@@ -13,8 +13,8 @@
     grid-template-rows: 1fr repeat(3, 40vw) 3rem;
   }
 
-  @include respond (phone-small) {
-    grid-template-rows: 1fr repeat(3, 50vw) 3rem;
+  @include respond (phone-med) {
+    grid-template-rows: 1fr repeat(3, min-content) 3rem;
   }
 
   &__item {

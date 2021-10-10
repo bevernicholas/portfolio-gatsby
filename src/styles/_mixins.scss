@@ -21,10 +21,13 @@ tab-land
 small-desk
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone-small {
+  @if $breakpoint == phone {
+    @media (max-width: 520px) { @content };
+  }
+  @if $breakpoint == phone-med {
     @media (max-width: 640px) { @content };
   }
-  @if $breakpoint == phone {
+  @if $breakpoint == phone-large {
     @media (max-width: 700px) { @content };
   }
   @if $breakpoint == tab-port-med {

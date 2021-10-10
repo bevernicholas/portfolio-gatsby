@@ -35,6 +35,10 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(7, 5vw);
 
+    @include respond(phone) {
+      grid-template-rows: repeat(7, min-content);
+    }
+
     margin: 5rem;
 
     &--img {
@@ -129,7 +133,7 @@
         bottom: 1rem;
       }
 
-      @include respond(phone) {
+      @include respond(phone-large) {
         top: 1.4rem;
         right: 1rem;
       }

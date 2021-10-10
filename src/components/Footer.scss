@@ -1,5 +1,10 @@
 .footer {
   background-color: rgba($color-primary-dark, .97);
+  font-size: 2rem;
+
+  @include respond (phone-med) {
+    font-size: 1rem;
+  }
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -29,7 +34,6 @@
 
     &--item {
       margin-right: 2rem;
-      font-size: 2rem;
       cursor: pointer;
       transition: all .4s;
 
@@ -42,7 +46,6 @@
   }
 
   &__desc {
-    font-size: 2rem;
     grid-column: 2 / 3;
 
     p {
