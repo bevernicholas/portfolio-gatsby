@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'Ecommerce Site',
-    description: 'An eccomerce site created using React, React Router, Redux, Sass, and Typescript.  User is able to browse items by product type as well as gender.  Add to cart functionality is managed by Redux.',
+    description: 'An eccomerce site created using React, React Router, Redux, Sass, and Typescript.  Sign In functionality was creatd user Firebase, and allows new users to be created by creating a new email/username/password, or by linking their Google Accounts.  Add to cart functionality is managed by Redux.  Recently converted class based components to functional components use React-Hooks.',
     gitHubLink: 'https://github.com/bevernicholas/crwn-clothing',
     deployedUrl: 'http://nick-crwn-live.herokuapp.com/',
     imageName: 'project1'
