@@ -19,7 +19,6 @@ const experience = [
       'Implemented and maintained RESTful APIs using Express.js and ASP.NET Core',
       'Contributed to full scale retail analytics platform using React.js, React Router, and Redux.',
       'Implemented data pipelines leveraging Apache Spark and AWS EMR to transform large datasets to produce and consume data from S3 and Elasticsearch',
-      'Created intuitive data visualizations using D3 and Highchart in React.js',
     ]
   },
   {
