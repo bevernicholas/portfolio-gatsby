@@ -12,7 +12,7 @@ export const projects = [
     title: 'COVID-19 Tracker',
     description: 'A web application displaying various data visualizations written in React and Typescript.  The user is able to track the number of cases and deaths world wide, as well as by country, after selecting a specific country from the drop down menu.  Data displayed is obtained from mathdroid/covid-19-api, serving data from John Hopkins University.',
     gitHubLink: 'https://github.com/bevernicholas/covid-tracker',
-    deployedUrl: '',
+    deployedUrl: 'https://nick-covid-tracker.herokuapp.com/',
     imageName: 'project2'
   }
 ];
