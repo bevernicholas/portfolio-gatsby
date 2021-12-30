@@ -9,14 +9,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px / 16px = 62.5%
+  height: 100%;
 }
 
 body {
-  // font-family: $font-primary;
   font-family: 'Roboto';
   color: rgba($color-white, .7);
   font-weight: 300;
   line-height: 1.6;
+  min-height: 100%;
 }
 
 .main {
@@ -26,6 +27,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content 15rem;
+  grid-template-rows: minmax(85vh, min-content) 15rem;
+
   grid-template-columns: 1fr;
 }
