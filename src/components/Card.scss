@@ -9,12 +9,23 @@
   transition: transform .6s;
   font-size: 1.2rem;
 
+  @include respond (tab-port) {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    height: 35rem;
+  }
+
   &__heading {
     text-align: center;
     margin: 4rem 0 2rem;
     font-size: 2.2rem;
     font-weight: 300;
     text-transform: uppercase;
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__underline {
@@ -43,10 +54,18 @@
       &:not(:last-child) {
         border-bottom: 1px solid $color-secondary;
       }
+
+      @include respond(tab-port) {
+        font-size: 1.2rem;
+      }
     }
   }
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
+
+    @include respond (tab-port) {
+      transform: none;
+    }
   }
 }

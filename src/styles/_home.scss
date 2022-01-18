@@ -4,6 +4,11 @@
   display: grid;
   grid-template-rows: 100vh repeat(4, min-content);
   grid-template-columns: [full-start] 2rem [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 2rem [full-end];
+
+  @include respond (phone-large) {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [full-end];
+  }
 }
 
 .heading-primary{
@@ -23,7 +28,7 @@
     letter-spacing: 3.5rem;
 
     @include respond (phone-med) {
-      font-size: 3rem;
+      font-size: 2.4rem;
       margin-bottom: .5rem;
     }
   }
@@ -55,7 +60,7 @@
   }
 
   @include respond(tab-port) {
-    font-size: 3.7rem;
+    font-size: 2.7rem;
   }
 }
 

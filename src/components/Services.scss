@@ -13,9 +13,20 @@
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    grid-gap: .5rem;
+    grid-column: 1 / -1;
+  }
+
   &__heading {
     margin-top: 5rem;
     grid-column: 1 / -1;
     margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 2.5rem;
+    }
   }
 }

@@ -7,6 +7,12 @@
   display: grid;
   grid-template-columns: 4rem 1fr 4rem;
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    padding: 1.25rem;
+  }
+
   &__icon {
     width: 2.75rem;
     height: 2.75rem;
@@ -35,24 +41,36 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(7, 5vw);
 
-    @include respond(phone) {
-      grid-template-rows: repeat(7, min-content);
+    margin: 5rem;
+
+    @include respond(tab-port) {
+      grid-column: 1/-1;
+      width: 100%;
+      margin: 0;
     }
 
-    margin: 5rem;
+    @include respond(phone) {
+      grid-template-rows: repeat(7, min-content);
+      margin-top: 2.5rem;
+      &:last-child {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    
 
     &--img {
       grid-row: 1 / -1;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, .8);
-      border-radius: .6rem;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
+      border-radius: 0.6rem;
 
       &-1 {
         grid-column: 1 / 7;
 
         @include respond(tab-port) {
           grid-column: 1 / -1;
+          display: none;
         }
-
       }
 
       &-2 {
@@ -60,14 +78,14 @@
 
         @include respond(tab-port) {
           grid-column: 1 / -1;
+          display: none;
         }
-
       }
     }
 
     &--title {
-      margin-bottom: .5rem;
-      border-bottom: .2rem solid $color-secondary;
+      margin-bottom: 0.5rem;
+      border-bottom: 0.2rem solid $color-secondary;
 
       @include respond(tab-land-med) {
         font-size: 1.6rem;
@@ -87,8 +105,9 @@
       grid-row: 2 / 7;
       z-index: 1;
       background-color: $color-white;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, .8);
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
       padding: 1.5rem;
+      border-radius: 0.6rem;
 
       p {
         font-size: 1.75rem;
@@ -99,6 +118,7 @@
 
         @include respond(tab-port) {
           font-size: 1.4rem;
+          width: 100%;
         }
 
         @include respond(tab-port-med) {
@@ -110,7 +130,8 @@
         grid-column: 4 / -1;
 
         @include respond(tab-port) {
-          grid-column: 2 / 9;
+          // grid-column: 2 / 9;
+          grid-column: 1 /-1;
         }
       }
 
@@ -118,7 +139,8 @@
         grid-column: 1 / 7;
 
         @include respond(tab-port) {
-          grid-column: 2 / 9;
+          // grid-column: 2 / 9;
+          grid-column: 1 / -1;
         }
       }
     }
@@ -147,7 +169,7 @@
       &:visited,
       &:link {
         text-decoration: none;
-        color: rgba($color-primary-dark, .9);
+        color: rgba($color-primary-dark, 0.9);
       }
     }
   }
@@ -155,6 +177,6 @@
   &__img {
     width: 100%;
     height: 100%;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
   }
 }
